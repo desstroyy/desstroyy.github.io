@@ -3,75 +3,119 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - GitHub Profile</title>
+    <title>Shrisha S K - GitHub Profile</title>
     <style>
+        :root {
+            --primary-color: #2c3e50; /* Dark blue: professionalism, trust */
+            --secondary-color: #27ae60; /* Green: growth, balance */
+            --accent-color: #e67e22; /* Orange: creativity, enthusiasm */
+            --background-color: #ecf0f1; /* Light gray: clean, modern */
+            --text-color: #333; /* Dark gray: readability */
+        }
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
         }
         header {
-            background-color: #f4f4f4;
-            padding: 1rem;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 2rem;
             text-align: center;
         }
         nav {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 1rem;
+            background-color: var(--secondary-color);
+            padding: 1rem;
+            text-align: center;
         }
         nav a {
-            margin: 0 10px;
+            color: white;
             text-decoration: none;
-            color: #333;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--accent-color);
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 2rem;
         }
         .project {
-            border: 1px solid #ddd;
+            background-color: white;
+            border-left: 5px solid var(--accent-color);
             padding: 1rem;
             margin-bottom: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .project:hover {
+            transform: translateX(5px);
+        }
+        h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 0.5rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #d35400;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Name</h1>
-        <p>Welcome to my GitHub Profile!</p>
+        <h1>Shrisha S K</h1>
+        <p> Aspiring Machine Learning | Data Science | AI Research</p>
     </header>
     
     <nav>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </nav>
     
     <main>
         <section id="about">
             <h2>About Me</h2>
-            <p>Here you can write a brief introduction about yourself, your skills, and your interests.</p>
+            <p>Passionate AI developer with a knack for creating efficient, scalable solutions. I thrive in collaborative environments and am always eager to tackle new challenges and learn new things.</p>
         </section>
         
         <section id="projects">
-            <h2>My Projects</h2>
+            <h2>Featured Projects</h2>
             <div class="project">
-                <h3>Project 1</h3>
-                <p>Description of your first project.</p>
-                <a href="https://github.com/yourusername/project1">View on GitHub</a>
+                <h3>RoBERTa-BiLSTM for Sentiment Analysis</h3>
+                <p>An implementation of a research paper from scratch by <a href="https://arxiv.org/abs/2406.00367">Rahman et al. 2024 </a>to perform NLP tasks like Sentiment Analysis of large and complex datasets. The achieved test set accuracy was 85%.</a></p>
+                <a href="#" class="cta-button">View Project</a>
             </div>
-            <div class="project">
-                <h3>Project 2</h3>
-                <p>Description of your second project.</p>
-                <a href="https://github.com/yourusername/project2">View on GitHub</a>
-            </div>
+            
+        </section>
+        
+        <section id="skills">
+            <h2>Skills</h2>
+            <p>Python | Pytorch | Java | Tensorflow | SQL | Git</p>
+            <p>Problem Solving | Team Building | Inquisitive | Fast Learner</p>
         </section>
         
         <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Email: your.email@example.com</p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile">Your LinkedIn</a></p>
-            <p>Twitter: <a href="https://twitter.com/yourhandle">@YourHandle</a></p>
+            <h2>Let's Connect</h2>
+            <p>I'm always open to discussing new projects and opportunities.</p>
+            <a href="mailto:shrishask884@gmail.com" class="cta-button">Email Me</a>
+            <a href="https://www.linkedin.com/in/shrishask" class="cta-button">LinkedIn</a>
         </section>
     </main>
 </body>
